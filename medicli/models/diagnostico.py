@@ -1,7 +1,12 @@
 from django.db import models
-from .user import User
+from .medico import Medico
+from .historia_clinica import Historia_clinica
 
 
 class Diagnostico(models.Model):
-    diagnostico = models.CharField(primary_key=True,max_length=20)
+    id = models.AutoField(primary_key=True)
     descripcion = models.CharField(max_length=150)
+    medico = models.ForeignKey(Medico, on_delete=models.CASCADE, null=True)
+    historiaClinica = models.ForeignKey(
+        Historia_clinica, on_delete=models.CASCADE, null=True)
+    

@@ -1,9 +1,10 @@
 from django.db import models
 from .user import User
+from .paciente import Paciente
 
 
 class Medico(models.Model):
-    cedula = models.CharField(primary_key=True,max_length=20)
+    cedula = models.CharField(primary_key=True, max_length=20)
     especialidad = models.CharField(max_length=20)
     nombre = models.CharField(max_length=20)
     apellido = models.CharField(max_length=20)
@@ -11,5 +12,6 @@ class Medico(models.Model):
     telefono = models.CharField(max_length=12)
     ciudad = models.CharField(max_length=15)
     fecha = models.DateField()
-    user = models.OneToOneField(User,on_delete=models.CASCADE,
-    null=False,blank=False)
+    user = models.OneToOneField(User, on_delete=models.CASCADE,
+                                null=False, blank=False)
+    paciente = models.ForeignKey(Paciente, on_delete=models.CASCADE, null=True)
