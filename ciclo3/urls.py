@@ -14,8 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path
-from rest_framework_simplejwt.views import (TokenObtainPairView, TokenRefreshView)
-from medicli import views 
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView, TokenRefreshView)
+from medicli import views
 
 
 urlpatterns = [
@@ -30,4 +31,18 @@ urlpatterns = [
     path('refresh/', TokenRefreshView.as_view()),
     path('enfermero/', views.EnfermeroCreateView.as_view()),
     path('enfermero/<int:pk>/', views.EnfermeroDetailView.as_view()),
+]
+
+urlpatterns = [
+    path('login/', TokenObtainPairView.as_view()),
+    path('refresh/', TokenRefreshView.as_view()),
+    path('user/', views.UserCreateView.as_view()),
+    path('user/<int:pk>/', views.UserDetailView.as_view()),
+]
+
+urlpatterns = [
+    path('login/', TokenObtainPairView.as_view()),
+    path('refresh/', TokenRefreshView.as_view()),
+    path('user/', views.PacienteCreateView.as_view()),
+    path('user/<int:pk>/', views.PacienteDetailView.as_view()),
 ]

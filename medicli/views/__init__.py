@@ -6,3 +6,7 @@ from .diagnosticoCreateView import DiagnosticoCreateView
 from .diagnosticoDetailView import DiagnosticoDetailView
 from .familiarCreateView import FamiliarCreateView
 from .familiarDetailView import FamiliarDetailView
+from .userView import UserCreateView
+from .userDetailView import UserDetailView
+from .pacienteCreateView import PacienteCreateView
+from .pacienteDetailView import PacienteDetailView
