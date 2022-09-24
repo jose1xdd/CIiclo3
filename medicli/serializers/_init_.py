@@ -1,0 +1,2 @@
+from .medicoSerializer import MedicoSerializer
+from .enfermeroSerializer import EnfermeroSerializer
