@@ -10,3 +10,5 @@ from .userView import UserCreateView
 from .userDetailView import UserDetailView
 from .pacienteCreateView import PacienteCreateView
 from .pacienteDetailView import PacienteDetailView
+from .signos_vitalesCreateView import Signos_vitalesCreateView
+from .signos_vitalesDetailView import Signos_vitalesDetailView
