@@ -6,3 +6,4 @@ from .MedicoView import MedicoList
 from .MedicoView import MedicoDetail
 from .EnfermeroView import EnfermeroList
 from .EnfermeroView import EnfermeroDetail
+
