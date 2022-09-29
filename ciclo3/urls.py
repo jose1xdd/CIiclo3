@@ -24,25 +24,18 @@ urlpatterns = [
     path('refresh/', TokenRefreshView.as_view()),
     path('medico/', views.MedicoCreateView.as_view()),
     path('medico/<int:pk>/', views.MedicoDetailView.as_view()),
-]
-
-urlpatterns = [
-    path('login/', TokenObtainPairView.as_view()),
-    path('refresh/', TokenRefreshView.as_view()),
     path('enfermero/', views.EnfermeroCreateView.as_view()),
     path('enfermero/<int:pk>/', views.EnfermeroDetailView.as_view()),
-]
-
-urlpatterns = [
-    path('login/', TokenObtainPairView.as_view()),
-    path('refresh/', TokenRefreshView.as_view()),
     path('user/', views.UserCreateView.as_view()),
     path('user/<int:pk>/', views.UserDetailView.as_view()),
-]
-
-urlpatterns = [
-    path('login/', TokenObtainPairView.as_view()),
-    path('refresh/', TokenRefreshView.as_view()),
-    path('user/', views.PacienteCreateView.as_view()),
-    path('user/<int:pk>/', views.PacienteDetailView.as_view()),
+    path('paciente/', views.PacienteCreateView.as_view()),
+    path('paciente/<int:pk>/', views.PacienteDetailView.as_view()),
+    path('signos_vitales/', views.Signos_vitalesCreateView.as_view()),
+    path('signos_vitales/<int:pk>/', views.Signos_vitalesDetailView.as_view()),
+    path('diagnostico/', views.DiagnosticoCreateView.as_view()),
+    path('diagnostico/<int:pk>/', views.DiagnosticoDetailView.as_view()),
+    path('familiar/', views.FamiliarCreateView.as_view()),
+    path('familiar/<int:pk>/', views.FamiliarDetailView.as_view()),
+    path('historia_clinica/', views.Historia_clinicaCreateView.as_view()),
+    path('historia_Clinica/<int:pk>/', views.Historia_clinicaDetailView.as_view()),
 ]
