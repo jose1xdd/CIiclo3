@@ -22,12 +22,28 @@ from medicli import views
 urlpatterns = [
     path('login/', TokenObtainPairView.as_view()),
     path('refresh/', TokenRefreshView.as_view()),
+    path('medico/', views.MedicoCreateView.as_view()),
+    path('medico/<int:pk>/', views.MedicoDetailView.as_view()),
+]
+
+urlpatterns = [
+    path('login/', TokenObtainPairView.as_view()),
+    path('refresh/', TokenRefreshView.as_view()),
+    path('enfermero/', views.EnfermeroCreateView.as_view()),
+    path('enfermero/<int:pk>/', views.EnfermeroDetailView.as_view()),
+]
+
+urlpatterns = [
+    path('login/', TokenObtainPairView.as_view()),
+    path('refresh/', TokenRefreshView.as_view()),
     path('user/', views.UserCreateView.as_view()),
     path('user/<int:pk>/', views.UserDetailView.as_view()),
-    path('paciente/', views.PacienteList.as_view()),
-    path('paciente/<str:pk>/', views.PacienteDetail.as_view()),
-    path('medico/', views.MedicoList.as_view()),
-    path('medico/<str:pk>/', views.MedicoDetail.as_view()),
-    path('enfermero/', views.EnfermeroList.as_view()),
-    path('enfermero/<str:pk>/', views.EnfermeroDetail.as_view()),
 ]
+
+urlpatterns = [
+    path('login/', TokenObtainPairView.as_view()),
+    path('refresh/', TokenRefreshView.as_view()),
+    path('user/', views.PacienteCreateView.as_view()),
+    path('user/<int:pk>/', views.PacienteDetailView.as_view()),
+]
+
