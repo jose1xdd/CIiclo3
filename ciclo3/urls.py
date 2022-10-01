@@ -30,5 +30,8 @@ urlpatterns = [
     path('medico/<str:pk>/', views.MedicoDetail.as_view()),
     path('enfermero/', views.EnfermeroList.as_view()),
     path('enfermero/<str:pk>/', views.EnfermeroDetail.as_view()),
-
+    path('familiar/', views.FamiliarList.as_view()),
+    path('familiar/<str:pk>/', views.FamiliarDetail.as_view()),
+    path('diagnostico/', views.DiagnosticoList.as_view()),
+    path('diagnostico/<int:pk>/', views.DiagnosticoDetail.as_view()),
 ]
