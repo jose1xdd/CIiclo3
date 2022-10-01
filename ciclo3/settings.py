@@ -101,10 +101,10 @@ WSGI_APPLICATION = 'ciclo3.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd5jkul94nkf2er',
-        'USER': 'mcoctfbmoasxmn',
-        'PASSWORD': '75cc6ad5275ae3815f15aa6c1af314cfb921655bab3f324a028a0d7ea7083842',
-        'HOST': 'ec2-34-231-42-166.compute-1.amazonaws.com',
+        'NAME': 'd8i63gtlggqequ',
+        'USER': 'hpvaveevtmepld',
+        'PASSWORD': 'a7f3a4b7cc93829bb51aaffac4fcbb0dff218c04fd4163b0d5e8b18af5c37ca4',
+        'HOST': 'ec2-44-195-100-240.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
