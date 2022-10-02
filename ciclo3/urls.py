@@ -34,4 +34,6 @@ urlpatterns = [
     path('familiar/<str:pk>/', views.FamiliarDetail.as_view()),
     path('diagnostico/', views.DiagnosticoList.as_view()),
     path('diagnostico/<int:pk>/', views.DiagnosticoDetail.as_view()),
+    path('signos_vitales/', views.Signos_vitalesList.as_view()),
+    path('signos_vitales/<str:pk>/', views.Signos_vitalesDetail.as_view()),
 ]
