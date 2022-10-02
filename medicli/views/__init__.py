@@ -10,3 +10,5 @@ from .FamiliarView import FamiliarList
 from .FamiliarView import FamiliarDetail
 from .DiagnosticoView import DiagnosticoList
 from .DiagnosticoView import DiagnosticoDetail
+from .Signos_vitalesView import Signos_vitalesList
+from .Signos_vitalesView import Signos_vitalesDetail
