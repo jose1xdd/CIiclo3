@@ -12,3 +12,5 @@ from .DiagnosticoView import DiagnosticoList
 from .DiagnosticoView import DiagnosticoDetail
 from .Signos_vitalesView import Signos_vitalesList
 from .Signos_vitalesView import Signos_vitalesDetail
+from .Historia_clinicaView import Historia_clinicaList
+from .Historia_clinicaView import Historia_clinicaDetail

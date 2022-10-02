@@ -36,4 +36,6 @@ urlpatterns = [
     path('diagnostico/<int:pk>/', views.DiagnosticoDetail.as_view()),
     path('signos_vitales/', views.Signos_vitalesList.as_view()),
     path('signos_vitales/<int:pk>/', views.Signos_vitalesDetail.as_view()),
+    path('historia_clinica/', views.Historia_clinicaList.as_view()),
+    path('historia_clinica/<int:pk>/', views.Historia_clinicaDetail.as_view()),
 ]
