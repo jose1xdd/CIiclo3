@@ -1,8 +1,13 @@
+from medicli.models import familiar
+from medicli.serializers.userSerializer import UserSerializer
 from medicli.models.familiar import Familiar
 from rest_framework import serializers
+
 
 class FamiliarSerializer(serializers.ModelSerializer):
     class Meta:
         model = Familiar
-        fields = ['cedula', 'nombre', 'apellido', 'parentesco', 'direccion', 'telefono', 'ciudad', 
-        'fecha']
+        fields = ['cedula', 'nombre', 'apellido', 'parentesco', 'direccion', 'telefono', 'ciudad',
+                  'fecha']
+
+        

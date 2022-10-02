@@ -11,5 +11,4 @@ class Familiar(models.Model):
     telefono = models.CharField(max_length=12)
     ciudad = models.CharField(max_length=15)
     fecha = models.DateField()
-    user = models.OneToOneField(User,on_delete=models.CASCADE,
-    null=False,blank=False)
+    user = models.OneToOneField(User,related_name='familiar',on_delete=models.CASCADE,null=True)
