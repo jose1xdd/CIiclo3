@@ -12,6 +12,4 @@ class Medico(models.Model):
     telefono = models.CharField(max_length=12)
     ciudad = models.CharField(max_length=15)
     fecha = models.DateField()
-    user = models.OneToOneField(User, on_delete=models.CASCADE,
-                                null=False, blank=False)
     paciente = models.ForeignKey(Paciente, on_delete=models.CASCADE, null=True)
